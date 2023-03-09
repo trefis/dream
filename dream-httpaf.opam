@@ -15,6 +15,8 @@ maintainer: "Anton Bachin <antonbachin@yahoo.com>"
 depends: [
   "dream-pure"
   "dune" {>= "2.7.0"}  # --instrument-with.
+  "gluten"
+  "gluten-lwt-unix"
   "lwt"
   "lwt_ppx" {>= "1.2.2"}
   "lwt_ssl"
@@ -22,8 +24,6 @@ depends: [
   "ssl" {>= "0.5.8"}  # Ssl.get_negotiated_alpn_protocol.
 
   # Currently vendored.
-  # "gluten"
-  # "gluten-lwt-unix"
   # "httpaf"
   # "httpaf-lwt-unix"
   # "h2"
@@ -38,8 +38,6 @@ depends: [
   "digestif" {>= "0.7.2"}  # websocket/af, sha1, default implementation.
   "faraday" {>= "0.6.1"}
   "faraday-lwt-unix"
-  "ke" {>= "0.5"}  # Gluten.
-  "lwt_ssl" {>= "1.2.0"}  # Gluten.
   "psq"  # h2.
   "result"  # http/af, websocket/af.
 ]
